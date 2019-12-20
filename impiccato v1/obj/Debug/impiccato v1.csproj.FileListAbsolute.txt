@@ -1,0 +1,17 @@
+C:\Users\diego.poli\source\repos\impiccato v1\impiccato v1\bin\Debug\impiccato v1.exe.config
+C:\Users\diego.poli\source\repos\impiccato v1\impiccato v1\bin\Debug\impiccato v1.exe
+C:\Users\diego.poli\source\repos\impiccato v1\impiccato v1\bin\Debug\impiccato v1.pdb
+C:\Users\diego.poli\source\repos\impiccato v1\impiccato v1\obj\Debug\impiccato v1.csprojAssemblyReference.cache
+C:\Users\diego.poli\source\repos\impiccato v1\impiccato v1\obj\Debug\Impiccato.g.cs
+C:\Users\diego.poli\source\repos\impiccato v1\impiccato v1\obj\Debug\MainWindow.g.cs
+C:\Users\diego.poli\source\repos\impiccato v1\impiccato v1\obj\Debug\App.g.cs
+C:\Users\diego.poli\source\repos\impiccato v1\impiccato v1\obj\Debug\impiccato v1_MarkupCompile.cache
+C:\Users\diego.poli\source\repos\impiccato v1\impiccato v1\obj\Debug\impiccato v1_MarkupCompile.lref
+C:\Users\diego.poli\source\repos\impiccato v1\impiccato v1\obj\Debug\Impiccato.baml
+C:\Users\diego.poli\source\repos\impiccato v1\impiccato v1\obj\Debug\MainWindow.baml
+C:\Users\diego.poli\source\repos\impiccato v1\impiccato v1\obj\Debug\impiccato v1.g.resources
+C:\Users\diego.poli\source\repos\impiccato v1\impiccato v1\obj\Debug\impiccato_v1.Properties.Resources.resources
+C:\Users\diego.poli\source\repos\impiccato v1\impiccato v1\obj\Debug\impiccato v1.csproj.GenerateResource.cache
+C:\Users\diego.poli\source\repos\impiccato v1\impiccato v1\obj\Debug\impiccato v1.csproj.CoreCompileInputs.cache
+C:\Users\diego.poli\source\repos\impiccato v1\impiccato v1\obj\Debug\impiccato v1.exe
+C:\Users\diego.poli\source\repos\impiccato v1\impiccato v1\obj\Debug\impiccato v1.pdb
