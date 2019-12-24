@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -23,18 +24,31 @@ namespace impiccato_v1
         public MainWindow()
         {
             InitializeComponent();
+
+            pn1.Visibility = Visibility.Hidden;
+            pnLingua.Visibility = Visibility.Hidden;
+            pnNGiocatori.Visibility = Visibility.Hidden;
+
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             Impiccato impiccato = new Impiccato();
 
-            impiccato.Show();
+            impiccato.Show(); //Apriu una nuova schermata
+            this.Close(); //Chiudi questa schermata
         }
 
         private void CbModalita_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             pn1.Visibility = Visibility.Visible;
+
+            Debug.WriteLine(cbModalita.Text);
+
+            if (cbModalita.SelectedIndex == 2)
+                pnNGiocatori.Visibility = Visibility.Visible;
+            else
+                pnNGiocatori.Visibility = Visibility.Hidden;
         }
 
         private void CbDifficolta_SelectionChanged(object sender, SelectionChangedEventArgs e)
