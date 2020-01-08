@@ -18,3 +18,5 @@ Per poter aggiungere delle descrizioni alla parola si usa il seguente costrutto:
 ```
 
 Le descrizioni vengono usate all'interno del progetto per poter definire gli aiuti
+
+I file .wdb si trovano dentro la directory "/impiccato v1/wdb/src"
