@@ -6,15 +6,13 @@ La sintassi segue le caratteristiche di un linguaggio di markup (aka CSS o HTML)
 
 Per una parola si utilizza  il costrutto:
 ```bash
-<wd id=[NUMERO_IDENTIFICATIVO] content=[PAROLA] -Altri Argomenti>
+<wd id=[NUMERO_IDENTIFICATIVO] content=[PAROLA]>
 ```
 Il numero identificativo (id) serve per poter accedere successivamente al dato (Es. Descrizioni)
 
 Per poter aggiungere delle descrizioni alla parola si usa il seguente costrutto:
 ```bash
-<desc id=[NUMERO_IDENTIFICATIVO]>
-    <Numero della descrizione>[DESCRIZIONE]</Numero della descrizione>
-</desc>
+<desc id=[NUMERO_IDENTIFICATIVO] content=[DESCRIZIONE]>
 ```
 
 Le descrizioni vengono usate all'interno del progetto per poter definire gli aiuti
