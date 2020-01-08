@@ -10,19 +10,25 @@ namespace wdb
             {
                 //Splash Screen
                 Console.WriteLine("##################################################################");
-                Console.WriteLine("#                   WDB Reader v" + Dipendences.version + "                                #");
+                Console.WriteLine("#                       WDB Reader v" + Dipendences.version + "                            #");
                 Console.WriteLine("##################################################################");
                 Console.WriteLine();
-                Console.WriteLine("Checking files..........");
+                Console.WriteLine("[WDB ENGINE]: Working path: ../../src/");
                 
                 //Check files
                 Reader.Engine.Check();
                 
-                Console.WriteLine("Done!");
+                Console.WriteLine("[WDB ENGINE]: All files works, starting local server");
+                
+                //Starting server via socket
+                Server.Main.Start();
             }
             catch (Exception ex)
             {
                 Console.ForegroundColor = ConsoleColor.Red;
+                
+                Console.WriteLine();
+                
                 Console.WriteLine(ex.Message);
                 Console.ResetColor();
                 
