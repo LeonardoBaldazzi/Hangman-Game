@@ -1,5 +1,5 @@
 # Introduzione ai file wdb
-I file ".wdb" (Word Database) rispondono all'esigenza di poter mantenere un database di parole/frasi facilmente aggiornabile e da gestire (si presta molto per applicazioni multilingua), sono scritti in un linguaggio interpretato direttamente dal programma che ne fa richiesta. (Provvederò popi ad inserire un'eventuale link al src dopo aver steso le funzionalità basi)
+I file ".wdb" (Word Database) rispondono all'esigenza di poter mantenere un database di parole/frasi facilmente aggiornabile e da gestire (si presta molto per applicazioni multilingua), sono scritti in un linguaggio interpretato direttamente dal programma che ne fa richiesta. (Provvederò poi ad inserire un'eventuale link al src dopo aver esteso le funzionalità basi)
 
 ## Sintassi
 La sintassi segue le caratteristiche di un linguaggio di markup (aka CSS o HTML), di seguito i costrutti base:
