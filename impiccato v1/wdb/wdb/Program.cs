@@ -15,6 +15,8 @@ namespace wdb
                 Console.WriteLine("#                       WDB Reader v" + Dipendences.version + "                            #");
                 Console.WriteLine("##################################################################");
                 Console.WriteLine();
+                
+                Console.WriteLine("Programmed by: Leonardo Baldazzi");
 
                 string[] cfg = File.ReadAllLines("./config.cfg");
 

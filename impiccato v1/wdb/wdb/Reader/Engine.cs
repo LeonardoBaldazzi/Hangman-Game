@@ -235,10 +235,11 @@ namespace wdb.Reader
                                     counter++;
                                 }
                                 
+                                /*
                                 if ((Array.IndexOf(alreadyExistId, Convert.ToInt32(tmpID)) != Convert.ToInt32(tmpID) + 1))
                                 {
                                     throw new Exception("Line: " + i + ": Id not exist");
-                                }
+                                } */
 
                                 break;
                             }
