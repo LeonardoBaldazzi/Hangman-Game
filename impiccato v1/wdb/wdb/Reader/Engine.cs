@@ -9,11 +9,11 @@ namespace wdb.Reader
         {
             int count = 0;
             
-            int fileCount = Directory.GetFiles("../../src/", "*.wdb", SearchOption.TopDirectoryOnly).Length; //Count of 'wdb files
+            int fileCount = Directory.GetFiles(Dipendences.workingPath, "*.wdb", SearchOption.TopDirectoryOnly).Length; //Count of 'wdb files
 
             if (fileCount > 0)
             {
-                Directory.SetCurrentDirectory("../../src/");
+                Directory.SetCurrentDirectory(Dipendences.workingPath);
                 
                 Console.WriteLine("[WDB ENGINE]: Checked " + fileCount + " '.wdb' files!");
                 
@@ -65,7 +65,7 @@ namespace wdb.Reader
             }
             else
             {
-                throw  new Exception("No files in '../../src/' directory"); //No files matched
+                throw  new Exception("No files in '" + Dipendences.workingPath + "' directory"); //No files matched
             }
         }
 
@@ -90,10 +90,12 @@ namespace wdb.Reader
                 tmpID = "";
                 tmpContent = "";
                 
-                if (content[i].StartsWith("<wd") || content[i].StartsWith("<desc"))
+                if (content[i].StartsWith("<wd") || content[i].StartsWith("<desc") || content[i].StartsWith("<gr") )
                 {
                     if (content[i].StartsWith("<wd"))
                     {
+                        //Word
+                        
                         param = "wd";
                         
                         //Check id
@@ -196,8 +198,10 @@ namespace wdb.Reader
                             throw new Exception("Line: " + i + ": Grammar error");
                         }
                     }
-                    else
+                    else if (content[i].StartsWith("<desc"))
                     {
+                        //Description
+                        
                         param = "desc";
                         
                          //Check id
@@ -296,8 +300,54 @@ namespace wdb.Reader
                             throw new Exception("Line: " + i + ": Grammar error");
                         }
                     }
+                    else
+                    {
+                        //Group
+                        
+                        param = "gr";
+
+                        if (i < content.Length)
+                        {
+                            if (4 < content[i].Length)
+                            {
+                                //Get group name
+                                for (int x = 4; x < content[i].Length; x++)
+                                {
+                                    if (content[i][x] == '>')
+                                    { break; }
+                                    
+                                    tmpContent += content[i][x];
+                                }
+
+                                int l = 0;
+                                
+                                //Get group lenght
+                                for (int x = i; x < content.Length; x++)
+                                {
+                                    if (content[i] == "</gr>")
+                                    { break; }
+
+                                    l++;
+                                }
+
+                                tmpContent = tmpContent + " (" + l + ")";
+                            }
+                            else
+                            {
+                                throw new Exception("Line: " + i + ": Grammar error");
+                            }
+                        }
+                        else
+                        {
+                            throw new Exception("Line: " + i + ": Grammar error");
+                        }
+                    }
                 }
-                else
+                else if (content[i] == "</gr>")
+                { //Nothing
+                    param = "Stop gr";
+                    tmpContent = "No Content";
+                } else
                 {
                     throw new Exception("Line: " + i + ": Grammar error");
                 }

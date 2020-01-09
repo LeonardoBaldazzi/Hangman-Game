@@ -1,4 +1,6 @@
 ﻿using System;
+using System.IO;
+using wdb.Reader;
 
 namespace wdb
 {
@@ -13,15 +15,23 @@ namespace wdb
                 Console.WriteLine("#                       WDB Reader v" + Dipendences.version + "                            #");
                 Console.WriteLine("##################################################################");
                 Console.WriteLine();
-                Console.WriteLine("[WDB ENGINE]: Working path: ../../src/");
+
+                string[] cfg = File.ReadAllLines("./config.cfg");
+
+                Dipendences.workingPath = cfg[0];
+                Dipendences.requestPath = cfg[1];
+                Dipendences.outputPath = cfg[2];
+                
+                Console.WriteLine("[WDB ENGINE]: Working path: " + Dipendences.workingPath);
+                Console.WriteLine("[WDB ENGINE]: Request file path: " + Dipendences.requestPath);
+                Console.WriteLine("[WDB ENGINE]: Output path: " + Dipendences.outputPath);
                 
                 //Check files
                 Reader.Engine.Check();
                 
-                Console.WriteLine("[WDB ENGINE]: All files works, starting local server");
-                
-                //Starting server via socket
-                Server.Main.Start();
+                Console.WriteLine("[WDB ENGINE]: All files works, Reading request file");
+
+                IO.ReadRequest();
             }
             catch (Exception ex)
             {
