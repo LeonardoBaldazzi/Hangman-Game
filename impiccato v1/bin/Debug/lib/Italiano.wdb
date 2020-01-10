@@ -1,1 +1,72 @@
-<wd id=0 content=ciao>
+<gr=f>
+<wd id=0 content=cat>
+<desc id=0 content=it does "miao">
+<wd id=1 content=dog>
+<desc id=1 content=>
+<wd id=2 content=home>
+<desc id=2 content=>
+<wd id=3 content=sun>
+<desc id=3 content=>
+<wd id=4 content=moon>
+<desc id=4 content=>
+<wd id=5 content=pen>
+<desc id=5 content=>
+<wd id=6 content=table>
+<desc id=6 content=>
+<wd id=7 content=ball>
+<desc id=7 content=>
+<wd id=8 content=phone>
+<desc id=8 content=>
+<wd id=9 content=cow>
+<desc id=9 content=>
+<wd id=10content=hello>
+<desc id=10content=>
+</gr>
+<gr=m>
+<wd id=0 content=unknow>
+<desc id=0 content=>
+<wd id=1 content=the pen is on the table>
+<desc id=1 content=>
+<wd id=2 content=hedgehog>
+<desc id=2 content=>
+<wd id=3 content=homework>
+<desc id=3 content=>
+<wd id=4 content=thirteen>
+<desc id=4 content=>
+<wd id=5 content=computer>
+<desc id=5 content=>
+<wd id=6 content=guitar>
+<desc id=6 content=>
+<wd id=7 content=politician>
+<desc id=7 content=>
+<wd id=8 content=sweat>
+<desc id=8 content=>
+<wd id=9 content=rude>
+<desc id=9 content=>
+<wd id=10content=pineapple>
+<desc id=10content=>
+</gr>
+<gr=d>
+<wd id=0 content=xenophobia>
+<desc id=0 content=>
+<wd id=1 content=ambassador>
+<desc id=1 content=>
+<wd id=2 content=knowledge>
+<desc id=2 content=>
+<wd id=3 content=fearful>
+<desc id=3 content=>
+<wd id=4 content=nightmare>
+<desc id=4 content=>
+<wd id=5 content=disrespectful>
+<desc id=5 content=>
+<wd id=6 content=cyberbullying>
+<desc id=6 content=>
+<wd id=7 content=experience>
+<desc id=7 content=>
+<wd id=8 content=aesthetic>
+<desc id=8 content=>
+<wd id=9 content=unsuitable>
+<desc id=9 content=>
+<wd id=10content=ineluctable>
+<desc id=10content=>
+</gr>

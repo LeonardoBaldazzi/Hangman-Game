@@ -1,0 +1,5 @@
+/home/fox/Scrivania/Programmazione/Hangman-Game/impiccato v1/wdb/wdb/obj/Debug/.NETFramework,Version=v4.7.2.AssemblyAttribute.cs
+/home/fox/Scrivania/Programmazione/Hangman-Game/impiccato v1/wdb/wdb/bin/Debug/wdb.pdb
+/home/fox/Scrivania/Programmazione/Hangman-Game/impiccato v1/wdb/wdb/bin/Debug/wdb.exe
+/home/fox/Scrivania/Programmazione/Hangman-Game/impiccato v1/wdb/wdb/obj/Debug/wdb.exe
+/home/fox/Scrivania/Programmazione/Hangman-Game/impiccato v1/wdb/wdb/obj/Debug/wdb.pdb

@@ -27,7 +27,7 @@ namespace impiccato_v1
         internal static string lingua = mn.cbLingua.Text; //Lingua scelta
         internal static string difficolta = mn.cbDifficolta.Text; //Difficoltà scelta
         internal static string modalita = mn.cbModalita.Text; //Malità scelta
-        internal static decimal nGiocatori = (decimal)mn.nGiocatori.Value; //Numero giocatori
+        internal static string nGiocatori = mn.txtNGiocatori.Text; //Numero giocatori
 
         
         public Impiccato()

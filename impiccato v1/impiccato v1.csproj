@@ -54,20 +54,8 @@
     <Reference Include="WindowsBase" />
     <Reference Include="PresentationCore" />
     <Reference Include="PresentationFramework" />
-    <Reference Include="Xceed.Wpf.AvalonDock, Version=3.7.0.0, Culture=neutral, PublicKeyToken=3e4669d2f30244f4, processorArchitecture=MSIL">
-      <HintPath>..\packages\Extended.Wpf.Toolkit.3.7.0\lib\net40\Xceed.Wpf.AvalonDock.dll</HintPath>
-    </Reference>
-    <Reference Include="Xceed.Wpf.AvalonDock.Themes.Aero, Version=3.7.0.0, Culture=neutral, PublicKeyToken=3e4669d2f30244f4, processorArchitecture=MSIL">
-      <HintPath>..\packages\Extended.Wpf.Toolkit.3.7.0\lib\net40\Xceed.Wpf.AvalonDock.Themes.Aero.dll</HintPath>
-    </Reference>
-    <Reference Include="Xceed.Wpf.AvalonDock.Themes.Metro, Version=3.7.0.0, Culture=neutral, PublicKeyToken=3e4669d2f30244f4, processorArchitecture=MSIL">
-      <HintPath>..\packages\Extended.Wpf.Toolkit.3.7.0\lib\net40\Xceed.Wpf.AvalonDock.Themes.Metro.dll</HintPath>
-    </Reference>
-    <Reference Include="Xceed.Wpf.AvalonDock.Themes.VS2010, Version=3.7.0.0, Culture=neutral, PublicKeyToken=3e4669d2f30244f4, processorArchitecture=MSIL">
-      <HintPath>..\packages\Extended.Wpf.Toolkit.3.7.0\lib\net40\Xceed.Wpf.AvalonDock.Themes.VS2010.dll</HintPath>
-    </Reference>
-    <Reference Include="Xceed.Wpf.Toolkit, Version=3.7.0.0, Culture=neutral, PublicKeyToken=3e4669d2f30244f4, processorArchitecture=MSIL">
-      <HintPath>..\packages\Extended.Wpf.Toolkit.3.7.0\lib\net40\Xceed.Wpf.Toolkit.dll</HintPath>
+    <Reference Include="WpfAnimatedGif, Version=1.4.18.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\WpfAnimatedGif.1.4.18\lib\net\WpfAnimatedGif.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
@@ -75,6 +63,13 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Caricamento.xaml.cs">
+      <DependentUpon>Caricamento.xaml</DependentUpon>
+    </Compile>
+    <Page Include="Caricamento.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Impiccato.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -113,6 +108,13 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <None Include="bin\Debug\impiccato v1.exe.config" />
+    <None Include="bin\Debug\lib\config.cfg" />
+    <None Include="bin\Debug\lib\Inglese.wdb" />
+    <None Include="bin\Debug\lib\Italiano.wdb" />
+    <None Include="bin\Debug\lib\Output.cfg" />
+    <None Include="bin\Debug\lib\Request.cfg" />
+    <None Include="bin\Debug\lib\Spagnolo.wdb" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -133,6 +135,27 @@
     <Resource Include="Immagini\Impicato err4.png" />
     <Resource Include="Immagini\Impicato err5.png" />
     <Resource Include="Immagini\Impicato err6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bin\Debug\de\Xceed.Wpf.AvalonDock.resources.dll" />
+    <Content Include="bin\Debug\es\Xceed.Wpf.AvalonDock.resources.dll" />
+    <Content Include="bin\Debug\fr\Xceed.Wpf.AvalonDock.resources.dll" />
+    <Content Include="bin\Debug\hu\Xceed.Wpf.AvalonDock.resources.dll" />
+    <Content Include="bin\Debug\impiccato v1.exe" />
+    <Content Include="bin\Debug\impiccato v1.pdb" />
+    <Content Include="bin\Debug\it\Xceed.Wpf.AvalonDock.resources.dll" />
+    <Content Include="bin\Debug\lib\wdb.exe" />
+    <Content Include="bin\Debug\pt-BR\Xceed.Wpf.AvalonDock.resources.dll" />
+    <Content Include="bin\Debug\ro\Xceed.Wpf.AvalonDock.resources.dll" />
+    <Content Include="bin\Debug\ru\Xceed.Wpf.AvalonDock.resources.dll" />
+    <Content Include="bin\Debug\sv\Xceed.Wpf.AvalonDock.resources.dll" />
+    <Content Include="bin\Debug\Xceed.Wpf.AvalonDock.dll" />
+    <Content Include="bin\Debug\Xceed.Wpf.AvalonDock.Themes.Aero.dll" />
+    <Content Include="bin\Debug\Xceed.Wpf.AvalonDock.Themes.Metro.dll" />
+    <Content Include="bin\Debug\Xceed.Wpf.AvalonDock.Themes.VS2010.dll" />
+    <Content Include="bin\Debug\Xceed.Wpf.Toolkit.dll" />
+    <Content Include="bin\Debug\zh-Hans\Xceed.Wpf.AvalonDock.resources.dll" />
+    <Resource Include="Immagini\Loading.gif" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

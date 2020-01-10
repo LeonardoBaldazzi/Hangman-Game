@@ -1,9 +1,61 @@
 <gr=f>
-<wd id=0 content=hello>
-<wd id=12 content=prova>
-<desc id=12 content=si dice per salutare>
-<desc id=0 content=questa è una prova>
+<wd id=0 content=cat>
+<desc id=0 content=dog hate it>
+<wd id=1 content=dog>
+<desc id=1 content=the best friend of man>
+<wd id=2 content=home>
+<desc id=2 content=where you live>
+<wd id=3 content=sun>
+<desc id=3 content=yellow and hot>
+<wd id=4 content=moon>
+<desc id=4 content=in the night sky>
+<wd id=5 content=pen>
+<desc id=5 content=is on the table>
+<wd id=6 content=table>
+<desc id=6 content=4 legs but it isn't alive>
+<wd id=7 content=ball>
+<desc id=7 content=foot...>
+<wd id=8 content=phone>
+<desc id=8 content=call and text>
+<wd id=9 content=cow>
+<desc id=9 content=produce the milk>
+<wd id=10content=hello>
+<desc id=10content=greet a friend>
 </gr>
 <gr=m>
-<wd id=1 content=askgdkg>
+<wd id=0 content=unknow>
+<desc id=0 content=you don't know>
+<wd id=1 content=the pen is on the table>
+<desc id=1 content= the best phrase in english>
+<wd id=2 content=hedgehog>
+<desc id=2 content=cute with thorns>
+<wd id=3 content=homework>
+<desc id=3 content=the teacher give you>
+<wd id=4 content=thirteen>
+<desc id=4 content=...reasone why>
+<wd id=5 content=computer>
+<desc id=5 content=pc's synonymous>
+<wd id=6 content=guitar>
+<desc id=6 content=string strument>
+<wd id=7 content=politician>
+<desc id=7 content=Trump>
+<wd id=8 content=sweet>
+<desc id=8 content=cake>
+<wd id=9 content=rude>
+<desc id=9 content=bad person>
+<wd id=10content=pineapple>
+<desc id=10content=pen ... apple pen>
+</gr>
+<gr=d>
+<wd id=0 content=xenophobia>
+<wd id=1 content=ambassador>
+<wd id=2 content=knowledge>
+<wd id=3 content=fearful>
+<wd id=4 content=nightmare>
+<wd id=5 content=disrespectful>
+<wd id=6 content=cyberbullying>
+<wd id=7 content=experience>
+<wd id=8 content=aesthetic>
+<wd id=9 content=unsuitable>
+<wd id=10content=ineluctable>
 </gr>

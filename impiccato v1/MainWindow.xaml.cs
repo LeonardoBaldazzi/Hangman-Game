@@ -33,9 +33,9 @@ namespace impiccato_v1
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            Impiccato impiccato = new Impiccato();
+            Caricamento carica = new Caricamento();
 
-            impiccato.Show(); //Apriu una nuova schermata
+            carica.Show(); //Apri la schermata di caricamento
             this.Close(); //Chiudi questa schermata
         }
 
