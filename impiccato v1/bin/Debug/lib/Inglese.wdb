@@ -19,8 +19,8 @@
 <desc id=8 content=call and text>
 <wd id=9 content=cow>
 <desc id=9 content=produce the milk>
-<wd id=10content=hello>
-<desc id=10content=greet a friend>
+<wd id=10 content=hello>
+<desc id=10 content=greet a friend>
 </gr>
 <gr=m>
 <wd id=0 content=unknow>
@@ -43,8 +43,8 @@
 <desc id=8 content=cake>
 <wd id=9 content=rude>
 <desc id=9 content=bad person>
-<wd id=10content=pineapple>
-<desc id=10content=pen ... apple pen>
+<wd id=10 content=pineapple>
+<desc id=10 content=pen ... apple pen>
 </gr>
 <gr=d>
 <wd id=0 content=xenophobia>
@@ -57,5 +57,5 @@
 <wd id=7 content=experience>
 <wd id=8 content=aesthetic>
 <wd id=9 content=unsuitable>
-<wd id=10content=ineluctable>
+<wd id=10 content=ineluctable>
 </gr>

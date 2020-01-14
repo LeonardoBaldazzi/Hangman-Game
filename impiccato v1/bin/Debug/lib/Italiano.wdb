@@ -1,72 +1,56 @@
 <gr=f>
-<wd id=0 content=cat>
-<desc id=0 content=it does "miao">
-<wd id=1 content=dog>
-<desc id=1 content=>
-<wd id=2 content=home>
-<desc id=2 content=>
-<wd id=3 content=sun>
-<desc id=3 content=>
-<wd id=4 content=moon>
-<desc id=4 content=>
-<wd id=5 content=pen>
-<desc id=5 content=>
-<wd id=6 content=table>
-<desc id=6 content=>
-<wd id=7 content=ball>
-<desc id=7 content=>
-<wd id=8 content=phone>
-<desc id=8 content=>
-<wd id=9 content=cow>
-<desc id=9 content=>
-<wd id=10content=hello>
-<desc id=10content=>
+<wd id=0 content=albero>
+<desc id=0 content=traduci tree>
+<wd id=1 content=aiuola>
+<desc id=1 content=non le puoi calpestare>
+<wd id=2 content=Gatto>
+<desc id=2 content= teme il cane>
+<wd id=3 content=cane>
+<desc id=3 content=il migliore amico dell’uomo>
+<wd id=4 content=Mucca>
+<desc id=4 content= produce il latte>
+<wd id=5 content=ciao>
+<desc id=5 content=saluto>
+<wd id=6 content=faccia>
+<desc id=6 content=traduci face>
+<wd id=7 content=penna>
+<desc id=7 content=non è una matita>
+<wd id=8 content=le tagliatelle di nonna pina>
+<desc id=8 content=canzoncina sulla pasta >
+<wd id=9 content=babbo natale>
+<desc id=9 content=porta i regali ed è vestito di rosso>
 </gr>
 <gr=m>
-<wd id=0 content=unknow>
-<desc id=0 content=>
-<wd id=1 content=the pen is on the table>
-<desc id=1 content=>
-<wd id=2 content=hedgehog>
-<desc id=2 content=>
-<wd id=3 content=homework>
-<desc id=3 content=>
-<wd id=4 content=thirteen>
-<desc id=4 content=>
-<wd id=5 content=computer>
-<desc id=5 content=>
-<wd id=6 content=guitar>
-<desc id=6 content=>
-<wd id=7 content=politician>
-<desc id=7 content=>
-<wd id=8 content=sweat>
-<desc id=8 content=>
-<wd id=9 content=rude>
-<desc id=9 content=>
-<wd id=10content=pineapple>
-<desc id=10content=>
+<wd id=0 content=qui gatta ci cova>
+<desc id=0 content=detto che indica una situazione sospetta>
+<wd id=1 content=dizionario>
+<desc id=1 content=raggruppamento di tutte le parole di una determinata lingua>
+<wd id=2 content=avambraccio>
+<desc id=2 content=arto compreso tra gomito e polso>
+<wd id=3 content=cinguettio>
+<desc id=3 content=verso degli uccelli>
+<wd id=4 content=ippopotamo>
+<desc id=4 content=cavallo dell’acqua>
+<wd id=5 content=cerbottana>
+<desc id=5 content=arma indigena>
+<wd id=6 content=aracnofobia>
+<desc id=6 content=una delle fobie più conosciute al mondo>
+<wd id=7 content=idilliaco>
+<desc id=7 content= sinonimo di spettacolare, mozzafiato >
+<wd id=8 content=panettone>
+<desc id=8 content=dolce natalizio>
+<wd id=9 content=porcospino>
+<desc id=9 content=animale ricoperto di spini>
 </gr>
 <gr=d>
-<wd id=0 content=xenophobia>
-<desc id=0 content=>
-<wd id=1 content=ambassador>
-<desc id=1 content=>
-<wd id=2 content=knowledge>
-<desc id=2 content=>
-<wd id=3 content=fearful>
-<desc id=3 content=>
-<wd id=4 content=nightmare>
-<desc id=4 content=>
-<wd id=5 content=disrespectful>
-<desc id=5 content=>
-<wd id=6 content=cyberbullying>
-<desc id=6 content=>
-<wd id=7 content=experience>
-<desc id=7 content=>
-<wd id=8 content=aesthetic>
-<desc id=8 content=>
-<wd id=9 content=unsuitable>
-<desc id=9 content=>
-<wd id=10content=ineluctable>
-<desc id=10content=>
+<wd id=0 content=Acido desossiribonucleico>
+<wd id=1 content=Effimero>
+<wd id=2 content=Paradosso>
+<wd id=3 content=Preterintenzionale>
+<wd id=4 content=Mentecatto>
+<wd id=5 content=Mononucleosi>
+<wd id=6 content=Tetrarchia>
+<wd id=7 content=Telecomunicazione>
+<wd id=8 content=Australopiteco>
+<wd id=9 content=Protocollo>
 </gr>
