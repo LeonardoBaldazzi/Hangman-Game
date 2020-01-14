@@ -25,6 +25,6 @@ Invece, per poter raggruppare più costrutturi sotto ad un'unico gruppo, si usa 
 ```
 I gruppi vengono usati all'interno del gioco dell'impiccato per dividere le parole in difficoltà diverse
 
-*E' possibilità dell'utente modificare i file di configurazione di WDB per poterne modificare i contenuti*
+*E' possibilità dell'utente accedere i file di configurazione di WDB per poterne modificare i contenuti*
 
 <b>I file .wdb si trovano, in questo progetto, dentro la directory "/impiccato v1/bin/Debug/lib"</b>
