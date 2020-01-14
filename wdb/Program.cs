@@ -45,9 +45,8 @@ namespace wdb
                 Console.ResetColor();
                 
                 Console.Write("Press any key to continue........");
+                Console.ReadKey();
             }
-
-            Console.ReadKey();
         }
     }
 }

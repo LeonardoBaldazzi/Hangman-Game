@@ -4,3 +4,9 @@ C:\Users\diego.poli\Desktop\Hangman-Game-master (1)\Hangman-Game-master\impiccat
 C:\Users\diego.poli\Desktop\Hangman-Game-master (1)\Hangman-Game-master\impiccato v1\wdb\wdb\obj\Debug\wdb.csproj.CoreCompileInputs.cache
 C:\Users\diego.poli\Desktop\Hangman-Game-master (1)\Hangman-Game-master\impiccato v1\wdb\wdb\obj\Debug\wdb.exe
 C:\Users\diego.poli\Desktop\Hangman-Game-master (1)\Hangman-Game-master\impiccato v1\wdb\wdb\obj\Debug\wdb.pdb
+C:\Users\leonardo.baldazzi\Desktop\Hangman-Game-master\wdb\bin\Debug\wdb.exe
+C:\Users\leonardo.baldazzi\Desktop\Hangman-Game-master\wdb\bin\Debug\wdb.pdb
+C:\Users\leonardo.baldazzi\Desktop\Hangman-Game-master\wdb\obj\Debug\wdb.csprojAssemblyReference.cache
+C:\Users\leonardo.baldazzi\Desktop\Hangman-Game-master\wdb\obj\Debug\wdb.csproj.CoreCompileInputs.cache
+C:\Users\leonardo.baldazzi\Desktop\Hangman-Game-master\wdb\obj\Debug\wdb.exe
+C:\Users\leonardo.baldazzi\Desktop\Hangman-Game-master\wdb\obj\Debug\wdb.pdb
