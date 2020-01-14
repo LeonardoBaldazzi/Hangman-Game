@@ -14,7 +14,7 @@ Per poter aggiungere delle descrizioni alla parola si usa il seguente costrutto:
 ```bash
 <desc id=[NUMERO_IDENTIFICATIVO] content=[DESCRIZIONE]>
 ```
-Le descrizioni vengono usate all'interno del progetto per poter definire gli aiuti
+Le descrizioni vengono usate all'interno del progetto per poter definire gli aiuti, è importante che l'id della descrizione sia uaguale a quello dato alla parola
 
 
 Invece, per poter raggruppare più costrutturi sotto ad un'unico gruppo, si usa il costrutto "gr":
@@ -25,6 +25,6 @@ Invece, per poter raggruppare più costrutturi sotto ad un'unico gruppo, si usa 
 ```
 I gruppi vengono usati all'interno del gioco dell'impiccato per dividere le parole in difficoltà diverse
 
-<u>E' possibilità dell'utente modificare i file di configurazione di WDB per poterne modificare i contenuti</u>
+*E' possibilità dell'utente modificare i file di configurazione di WDB per poterne modificare i contenuti*
 
 <b>I file .wdb si trovano, in questo progetto, dentro la directory "/impiccato v1/bin/Debug/lib"</b>
