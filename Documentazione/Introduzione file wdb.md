@@ -14,7 +14,17 @@ Per poter aggiungere delle descrizioni alla parola si usa il seguente costrutto:
 ```bash
 <desc id=[NUMERO_IDENTIFICATIVO] content=[DESCRIZIONE]>
 ```
-
 Le descrizioni vengono usate all'interno del progetto per poter definire gli aiuti
 
-I file .wdb si trovano dentro la directory "/impiccato v1/wdb/src"
+
+Invece, per poter raggruppare più costrutturi sotto ad un'unico gruppo, si usa il costrutto "gr":
+```bash
+<gr=[NOME AL GRUPPO]>
+    ....CODICE....
+</gr>
+```
+I gruppi vengono usati all'interno del gioco dell'impiccato per dividere le parole in difficoltà diverse
+
+<u>E' possibilità dell'utente modificare i file di configurazione di WDB per poterne modificare i contenuti</u>
+
+<b>I file .wdb si trovano, in questo progetto, dentro la directory "/impiccato v1/bin/Debug/lib"</b>
