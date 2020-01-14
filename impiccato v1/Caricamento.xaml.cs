@@ -1,47 +1,1 @@
-﻿using System;
-using System.IO;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Shapes;
-
-namespace impiccato_v1
-{
-    /// <summary>
-    /// Logica di interazione per Caricamento.xaml
-    /// </summary>
-    public partial class Caricamento : Window
-    {
-        static MainWindow mn = new MainWindow();
-
-          int nErrori = 0; //Numero di errori che si incrementerà
-          string lingua = mn.cbLingua.Text; //Lingua scelta
-          string difficolta = mn.cbDifficolta.Text; //Difficoltà scelta
-          string modalita = mn.cbModalita.Text; //Malità scelta
-          string nGiocatori = mn.txtNGiocatori.Text; //Numero giocatori
-        public Caricamento()
-        {
-            InitializeComponent();
-        }
-
-        private void Window_Loaded(object sender, RoutedEventArgs e)
-        {
-            //Starta
-            lblCaricamento.Content = "Caricamento WDB";
-
-            string[] inpFile = new string[3];
-
-            lingua[0] = lingua[0].ToString().ToUpper();
-            inpFile[0] = lingua + ".wdb";
-            inpFile[0][0] = inpFile[0][0].ToString().ToUpper();
-        }
-    }
-}
+﻿﻿using System;using System.IO;using System.Collections.Generic;using System.Linq;using System.Text;using System.Threading.Tasks;using System.Windows;using System.Windows.Controls;using System.Windows.Data;using System.Windows.Documents;using System.Windows.Input;using System.Windows.Media;using System.Windows.Media.Imaging;using System.Windows.Shapes;using System.Threading;namespace impiccato_v1{    /// <summary>    /// Logica di interazione per Caricamento.xaml    /// </summary>    public partial class Caricamento : Window    {        internal string lingua; //Lingua scelta        internal string difficolta; //Difficoltà scelta        internal string modalita; //Modalità scelta        internal string nGiocatori; //Modalità scelta        internal string parolaGenerata;        internal string aiuto;        public Caricamento(string l, string d, string mod, string nGioc)        {            lingua = l;            difficolta = d;            modalita = mod;            nGiocatori = nGioc;            InitializeComponent();        }        private void Window_Loaded(object sender, RoutedEventArgs e)        {            //Starta            lblCaricamento.Content = "Impostando WDB";            string[] inpFile = { "", "", "wd" };            inpFile[0] = lingua + ".wdb";            if(difficolta == "Facile")            {                inpFile[1] = "f";            }            else if(difficolta == "Medio")            {                inpFile[1] = "m";            }            else            {                inpFile[1] = "d";            }            File.WriteAllLines("./lib/Request.cfg", inpFile); //Scrivi nel file di richiesta l'array            lblCaricamento.Content = "Caricamento WDB";            Directory.SetCurrentDirectory("./lib");            System.Diagnostics.Process.Start(@".\wdb.exe"); //Esegui il sottoprogramma "wdb.exe" per la prima volta            string[] readedOutput = File.ReadAllLines("./Output.cfg");            string[] arrParole;            lblCaricamento.Content = "Generazione parola";            int lung = 0;            while(true) //Lunghezza array senza stringhe vuote            {                if (string.IsNullOrEmpty(readedOutput[lung]) || string.IsNullOrWhiteSpace(readedOutput[lung]))                    break;                lung++;            }            arrParole = new string[lung];            for(int i = 0; i < lung; i++) //Copia array            {                arrParole[i] = readedOutput[i];            }            Random rnd = new Random();            int pos = rnd.Next(0, arrParole.Length); //Parola random            parolaGenerata = arrParole[pos]; //Generazione parola            if(difficolta == "Facile" || difficolta == "Medio")            {                //Prendi l'aiuto                lblCaricamento.Content = "Generazione aiuto";                inpFile[2] = "desc " + lung;                File.WriteAllLines("./lib/Request.cfg", inpFile); //Scrivi nel file di richiesta l'array                System.Diagnostics.Process.Start(@".\wdb.exe"); //Esegui il sottoprogramma "wdb.exe" per la seconda volta                //Leggo il file di output            }            lblCaricamento.Content = "Generazione parola";            Impiccato imp = new Impiccato();            imp.Show();            this.Close();        }    }}

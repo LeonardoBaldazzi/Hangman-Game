@@ -39,6 +39,7 @@ namespace impiccato_v1
 
         private void Aggiorna()
         {
+            //Aggiorna il link dell'immagines
             BitmapImage image = new BitmapImage(new Uri(@"\Immagini\Impicato err" + nErrori + ".png", UriKind.Relative));
 
             ImmagineImpiccato.Source = image;
@@ -51,61 +52,7 @@ namespace impiccato_v1
 
         private void BtnAiuti_Click(object sender, RoutedEventArgs e)
         {
-            if(lingua == "Italiano")
-            {
-                if(difficolta == "Facile")
-                {
-                    string[,] italianoF;
-                    italianoF = new string[2, 10];
-                }
-                else if (difficolta == "Media")
-                {
-                    string[,] italianoM;
-                    italianoM = new string[2, 10];
-                }
-                else
-                {
-                    string[,] italianoD;
-                    italianoD = new string[2, 10];
-                }
-            } else if(lingua == "Inglese")
-            {
-                if (difficolta == "Facile")
-                {
-                    string[,] ingleseF;
-                    ingleseF = new string[2, 10];
-                }
-                else if (difficolta == "Media")
-                {
-                    string[,] ingleseM;
-                    ingleseM = new string[2, 10];
-                }
-                else
-                {
-                    string[,] ingleseD;
-                    ingleseD = new string[2, 10];
-                }
-            }
-            else
-            {
-                if (difficolta == "Facile")
-                {
-                    string[,] spagnoloF;
-                    spagnoloF = new string[2, 10];
-
-                }
-                else if (difficolta == "Media")
-                {
-                    string[,] spagnoloM;
-                    spagnoloM = new string[2, 10];
-                }
-                else
-                {
-                    string[,] spagnoloD;
-                    spagnoloD = new string[2, 10];
-                }
-            }
-
+	    //Fai visualizzare il form con gli aiuti
         }
     }
 }

@@ -28,12 +28,11 @@ namespace impiccato_v1
             pn1.Visibility = Visibility.Hidden;
             pnLingua.Visibility = Visibility.Hidden;
             pnNGiocatori.Visibility = Visibility.Hidden;
-
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            Caricamento carica = new Caricamento();
+            Caricamento carica = new Caricamento(cbLingua.Text, cbDifficolta.Text, cbModalita.Text, txtNGiocatori.Text); //Passa al nuovo form i contenuti delle combobox e dei txtbox
 
             carica.Show(); //Apri la schermata di caricamento
             this.Close(); //Chiudi questa schermata
