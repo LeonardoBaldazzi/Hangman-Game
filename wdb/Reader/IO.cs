@@ -16,7 +16,7 @@ namespace wdb.Reader
             string fileName = reqContent[0];
             
             //Second line = group name
-            string grName = reqContent[1];
+           // string grName = reqContent[1];
             
             //Third line = what search?
             string whSearch = reqContent[2];
@@ -27,35 +27,11 @@ namespace wdb.Reader
             string[] fileContent = File.ReadAllLines("./"+ fileName);
             Console.WriteLine("OK!");
             
-            Console.Write("[WDB ENGINE]: Searching'" + grName + "'....");
-
-            int startPos = -1;
-            int cont = -1;
-            
-            //Search startPos
-            for (int i = 0; i < fileContent.Length; i++)
-            {
-                if (fileContent[i] == "<gr=" + grName + ">")
-                {
-                    cont = i;
-                    
-                    break;
-                }
-                else
-                {
-                    startPos++;
-                }
-            }
-
-            if(startPos == -1 && cont > 0)
-                throw  new Exception(grName + " not found");
-
-            if (startPos == -1 && cont == 0)
-                startPos = 0;
+            //Console.Write("[WDB ENGINE]: Searching'" + grName + "'....");
             
             Console.WriteLine("OK!");
             
-            Console.Write("[WDB ENGINE]: Matching all " + whSearch + " components in " + fileName + " file.....");
+            Console.Write("[WDB ENGINE]: Matching all components in " + fileName + " file.....");
 
             if (whSearch == "wd")
             {
@@ -63,13 +39,11 @@ namespace wdb.Reader
                 string tmpID = "";
                 string tmpContent = "";
                 
-                for (int i = startPos + 1; i < fileContent.Length; i++)
+                for (int i = 0; i < fileContent.Length; i++)
                 {
                     tmpID = "";
                     tmpContent = "";
-                    
-                    if (fileContent[i] == "</gr>")
-                        break;
+                   
 
                     if (fileContent[i].StartsWith("<wd"))
                     {
@@ -174,7 +148,7 @@ namespace wdb.Reader
 
                 //Search desc content
 
-                for (int i = startPos + 1; i < fileContent.Length; i++)
+                for (int i = 0; i < fileContent.Length; i++)
                 {
                     idS = "-1";
                     
