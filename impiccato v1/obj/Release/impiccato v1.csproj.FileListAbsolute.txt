@@ -21,3 +21,26 @@ C:\Users\diego.poli\Desktop\Hangman-Game-master (1)\Hangman-Game-master\impiccat
 C:\Users\diego.poli\Desktop\Hangman-Game-master (1)\Hangman-Game-master\impiccato v1\bin\Release\WpfAnimatedGif.xml
 C:\Users\diego.poli\Desktop\Hangman-Game-master (1)\Hangman-Game-master\impiccato v1\obj\Release\impiccato v1.csprojAssemblyReference.cache
 C:\Users\diego.poli\Desktop\Hangman-Game-master (1)\Hangman-Game-master\impiccato v1\obj\Release\impiccato v1.csproj.CopyComplete
+C:\Users\diego.poli\OneDrive\Hangman-Game-master\impiccato v1\bin\Release\impiccato v1.exe.config
+C:\Users\diego.poli\OneDrive\Hangman-Game-master\impiccato v1\bin\Release\impiccato v1.exe
+C:\Users\diego.poli\OneDrive\Hangman-Game-master\impiccato v1\bin\Release\impiccato v1.pdb
+C:\Users\diego.poli\OneDrive\Hangman-Game-master\impiccato v1\bin\Release\WpfAnimatedGif.dll
+C:\Users\diego.poli\OneDrive\Hangman-Game-master\impiccato v1\bin\Release\WpfAnimatedGif.xml
+C:\Users\diego.poli\OneDrive\Hangman-Game-master\impiccato v1\obj\Release\impiccato v1.csprojAssemblyReference.cache
+C:\Users\diego.poli\OneDrive\Hangman-Game-master\impiccato v1\obj\Release\Caricamento.g.cs
+C:\Users\diego.poli\OneDrive\Hangman-Game-master\impiccato v1\obj\Release\Impiccato.g.cs
+C:\Users\diego.poli\OneDrive\Hangman-Game-master\impiccato v1\obj\Release\MainWindow.g.cs
+C:\Users\diego.poli\OneDrive\Hangman-Game-master\impiccato v1\obj\Release\App.g.cs
+C:\Users\diego.poli\OneDrive\Hangman-Game-master\impiccato v1\obj\Release\impiccato v1_Content.g.cs
+C:\Users\diego.poli\OneDrive\Hangman-Game-master\impiccato v1\obj\Release\impiccato v1_MarkupCompile.cache
+C:\Users\diego.poli\OneDrive\Hangman-Game-master\impiccato v1\obj\Release\impiccato v1_MarkupCompile.lref
+C:\Users\diego.poli\OneDrive\Hangman-Game-master\impiccato v1\obj\Release\Caricamento.baml
+C:\Users\diego.poli\OneDrive\Hangman-Game-master\impiccato v1\obj\Release\Impiccato.baml
+C:\Users\diego.poli\OneDrive\Hangman-Game-master\impiccato v1\obj\Release\MainWindow.baml
+C:\Users\diego.poli\OneDrive\Hangman-Game-master\impiccato v1\obj\Release\impiccato v1.g.resources
+C:\Users\diego.poli\OneDrive\Hangman-Game-master\impiccato v1\obj\Release\impiccato_v1.Properties.Resources.resources
+C:\Users\diego.poli\OneDrive\Hangman-Game-master\impiccato v1\obj\Release\impiccato v1.csproj.GenerateResource.cache
+C:\Users\diego.poli\OneDrive\Hangman-Game-master\impiccato v1\obj\Release\impiccato v1.csproj.CoreCompileInputs.cache
+C:\Users\diego.poli\OneDrive\Hangman-Game-master\impiccato v1\obj\Release\impiccato v1.csproj.CopyComplete
+C:\Users\diego.poli\OneDrive\Hangman-Game-master\impiccato v1\obj\Release\impiccato v1.exe
+C:\Users\diego.poli\OneDrive\Hangman-Game-master\impiccato v1\obj\Release\impiccato v1.pdb

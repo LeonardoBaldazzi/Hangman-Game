@@ -5,16 +5,16 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:impiccato_v1"
         mc:Ignorable="d"
-        Title="Impiccato" Height="395" Width="800">
+        Title="Impiccato" Height="395" Width="800" Loaded="Window_Loaded">
     <Grid>
         <Image x:Name="ImmagineImpiccato" HorizontalAlignment="Left" Height="284" Margin="480,26,0,0" VerticalAlignment="Top" Width="287"/>
         <Label Content="Parola" HorizontalAlignment="Left" Margin="31,26,0,0" VerticalAlignment="Top" Height="28" Width="108"/>
-        <Label x:Name="lblParla" Content="Parola +-" HorizontalAlignment="Left" Margin="31,54,0,0" VerticalAlignment="Top" Width="166"/>
+        <Label x:Name="lblParola" Content="" HorizontalAlignment="Left" Margin="31,54,0,0" VerticalAlignment="Top" Width="166"/>
         <Label Content="Lettera/Parola da inserire:" HorizontalAlignment="Left" Margin="35,176,0,0" VerticalAlignment="Top" Height="28" Width="162"/>
         <TextBox x:Name="txtInputLettera" HorizontalAlignment="Left" Height="23" Margin="35,204,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="235"/>
-        <Button Content="Conferma" HorizontalAlignment="Left" Margin="292,204,0,0" VerticalAlignment="Top" Width="138" Height="23" Click="Button_Click"/>
-        <Label Content="Lunghezza Parola: " HorizontalAlignment="Left" Margin="31,101,0,0" VerticalAlignment="Top" Height="28" Width="108"/>
-        <Label Content="E' il turno di:" HorizontalAlignment="Left" Margin="31,143,0,0" VerticalAlignment="Top" Height="28" Width="108"/>
+        <Button x:Name="btnConferma" Content="Conferma" HorizontalAlignment="Left" Margin="292,204,0,0" VerticalAlignment="Top" Width="138" Height="23" Click="Button_Click"/>
+        <Label x:Name="lblLunghezza" Content="Lunghezza Parola: " HorizontalAlignment="Left" Margin="31,101,0,0" VerticalAlignment="Top" Height="28" Width="108"/>
+        <Label x:Name="lblTurno" Content="E' il turno di:" HorizontalAlignment="Left" Margin="31,143,0,0" VerticalAlignment="Top" Height="28" Width="108"/>
         <Button x:Name="btnAiuti" Content="Aiuto" HorizontalAlignment="Left" Margin="35,244,0,0" VerticalAlignment="Top" Width="395" Height="66" Click="BtnAiuti_Click"/>
 
     </Grid>

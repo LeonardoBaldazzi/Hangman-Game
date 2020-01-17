@@ -26,11 +26,5 @@
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("bin/debug/xceed.wpf.avalondock.themes.vs2010.dll")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("bin/debug/xceed.wpf.toolkit.dll")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("bin/debug/zh-hans/xceed.wpf.avalondock.resources.dll")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("wdb/wdb.sln")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("wdb/wdb/bin/debug/wdb.exe")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("wdb/wdb/bin/release/wdb.exe")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("wdb/wdb/obj/debug/wdb.exe")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("wdb/wdb/obj/release/wdb.exe")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("wdb/wdb/wdb.csproj")]
 
 

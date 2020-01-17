@@ -63,6 +63,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <None Include="bin\Debug\lib\Inglese Difficile.wdb" />
     <Compile Include="Caricamento.xaml.cs">
       <DependentUpon>Caricamento.xaml</DependentUpon>
     </Compile>
@@ -110,8 +111,11 @@
     </EmbeddedResource>
     <None Include="bin\Debug\impiccato v1.exe.config" />
     <None Include="bin\Debug\lib\config.cfg" />
-    <None Include="bin\Debug\lib\Inglese.wdb" />
-    <None Include="bin\Debug\lib\Italiano.wdb" />
+    <None Include="bin\Debug\lib\Inglese Facile.wdb" />
+    <None Include="bin\Debug\lib\Inglese Medio.wdb" />
+    <None Include="bin\Debug\lib\Italiano Facile.wdb" />
+    <None Include="bin\Debug\lib\Italiano Medio.wdb" />
+    <None Include="bin\Debug\lib\Italiano Difficile.wdb" />
     <None Include="bin\Debug\lib\Output.cfg" />
     <None Include="bin\Debug\lib\Request.cfg" />
     <None Include="bin\Debug\lib\Spagnolo.wdb" />

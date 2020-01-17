@@ -32,22 +32,38 @@ namespace impiccato_v1
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            Caricamento carica = new Caricamento(cbLingua.Text, cbDifficolta.Text, cbModalita.Text, txtNGiocatori.Text); //Passa al nuovo form i contenuti delle combobox e dei txtbox
+            try //Gestione Errori
+            {
+                Caricamento carica = new Caricamento(cbLingua.Text, cbDifficolta.Text, cbModalita.Text, txtNGiocatori.Text); //Passa al nuovo form i contenuti delle combobox e dei txtbox
 
-            carica.Show(); //Apri la schermata di caricamento
-            this.Close(); //Chiudi questa schermata
+                carica.Show(); //Apri la schermata di caricamento
+                this.Close(); //Chiudi questa schermata
+            } catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Errore", MessageBoxButton.OK, MessageBoxImage.Error); //Errore!
+
+                this.Close(); //Chiudi tutto!
+            }
         }
 
         private void CbModalita_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            pn1.Visibility = Visibility.Visible;
+            try //Gestione errori
+            {
+                pn1.Visibility = Visibility.Visible;
 
-            Debug.WriteLine(cbModalita.Text);
+                Debug.WriteLine(cbModalita.Text);
 
-            if (cbModalita.SelectedIndex == 2)
-                pnNGiocatori.Visibility = Visibility.Visible;
-            else
-                pnNGiocatori.Visibility = Visibility.Hidden;
+                if (cbModalita.SelectedIndex == 2)
+                    pnNGiocatori.Visibility = Visibility.Visible;
+                else
+                    pnNGiocatori.Visibility = Visibility.Hidden;
+            } catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Errore", MessageBoxButton.OK, MessageBoxImage.Error); //Errore!
+
+                this.Close(); //Chiudi tutto!
+            }
         }
 
         private void CbDifficolta_SelectionChanged(object sender, SelectionChangedEventArgs e)

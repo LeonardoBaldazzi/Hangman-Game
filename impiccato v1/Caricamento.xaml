@@ -6,9 +6,9 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:impiccato_v1"
         mc:Ignorable="d"
-        Title="Caricamento" Height="450" Width="800" WindowStartupLocation="CenterScreen" WindowStyle="None" Loaded="Window_Loaded">
+        Title="Caricamento" Height="450" Width="800" WindowStartupLocation="CenterScreen" WindowStyle="None" Loaded="Window_Loaded" gif:ImageBehavior.AnimateInDesignMode="True" ResizeMode="NoResize" ShowInTaskbar="False">
     <Grid>
-        <Image HorizontalAlignment="Left" Height="203" Margin="277,66,0,0" VerticalAlignment="Top" Width="197" gif:ImageBehavior.AnimatedSource="./Immagini/Loading.gif"/>
-        <Label x:Name="lblCaricamento" Content="Label" HorizontalAlignment="Left" Margin="277,309,0,0" VerticalAlignment="Top" FontSize="18"/>
+        <Image Name="gif" HorizontalAlignment="Left" Height="203" Margin="277,66,0,0" VerticalAlignment="Top" Width="197" gif:ImageBehavior.AnimatedSource="./Immagini/Loading.gif" gif:ImageBehavior.AutoStart="True"/>
+        <Label x:Name="lblCaricamento" Content="Impostando WDB..." HorizontalAlignment="Left" Margin="294,305,0,0" VerticalAlignment="Top" FontSize="18"/>
     </Grid>
 </Window>
