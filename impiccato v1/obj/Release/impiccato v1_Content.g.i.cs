@@ -8,23 +8,18 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("bin/debug/de/xceed.wpf.avalondock.resources.dll")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("bin/debug/es/xceed.wpf.avalondock.resources.dll")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("bin/debug/fr/xceed.wpf.avalondock.resources.dll")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("bin/debug/hu/xceed.wpf.avalondock.resources.dll")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("bin/debug/impiccato%20v1.exe")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("bin/debug/impiccato%20v1.pdb")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("bin/debug/it/xceed.wpf.avalondock.resources.dll")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("bin/debug/lib/wdb.exe")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("bin/debug/pt-br/xceed.wpf.avalondock.resources.dll")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("bin/debug/ro/xceed.wpf.avalondock.resources.dll")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("bin/debug/ru/xceed.wpf.avalondock.resources.dll")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("bin/debug/sv/xceed.wpf.avalondock.resources.dll")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("bin/debug/sounds/err.wav")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("bin/debug/sounds/indovinata.wav")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("bin/debug/sounds/lose%201.wav")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("bin/debug/sounds/lose%202.wav")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("bin/debug/sounds/win.wav")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("bin/debug/xceed.wpf.avalondock.dll")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("bin/debug/xceed.wpf.avalondock.themes.aero.dll")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("bin/debug/xceed.wpf.avalondock.themes.metro.dll")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("bin/debug/xceed.wpf.avalondock.themes.vs2010.dll")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("bin/debug/xceed.wpf.toolkit.dll")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("bin/debug/zh-hans/xceed.wpf.avalondock.resources.dll")]
 
 

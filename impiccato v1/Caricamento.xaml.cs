@@ -14,6 +14,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 using System.Threading;
 using WpfAnimatedGif;
+using System.Diagnostics;
 
 namespace impiccato_v1
 {
@@ -22,6 +23,7 @@ namespace impiccato_v1
     /// </summary>
     public partial class Caricamento : Window
     {
+        //Variabili globali
         public static string lingua; //Lingua scelta
         public static string difficolta; //Difficoltà scelta
         public static string modalita; //Modalità scelta
@@ -29,6 +31,8 @@ namespace impiccato_v1
 
         public static string parolaGenerata;
         public static string aiuto;
+
+        //internal int c = 0;
 
         public Caricamento(string l, string d, string mod, string nGioc)
         {
@@ -45,6 +49,12 @@ namespace impiccato_v1
             {
                 //Starta il processo di wdb
                 lblCaricamento.Content = "Impostando WDB";
+
+                /*
+                if(c == 1)
+                    Directory.SetCurrentDirectory("../");
+
+                c = 0; */
 
                 //Cancella il contenuto del file di wdb in output (visto che ancora quest'ultimo non lo supporta nativamente)
                 string[] toWrite = { };
@@ -111,9 +121,29 @@ namespace impiccato_v1
                 }
                 else { aiuto = ""; } //Se viene scelta la difficoltà difficile allora non ci deve essere nessun aiuto
 
-                Impiccato imp = new Impiccato(parolaGenerata, aiuto); //Passa la parola generata e l'aiuto alla schermata "impiccato"
+                //Più schermate per ogni modalità
+                Debug.WriteLine("");
+                Debug.WriteLine("Difficoltà: " + difficolta);
+                Debug.WriteLine("Modalità: " + modalita);
+                Debug.WriteLine("Lingua: " + lingua);
+                Debug.WriteLine("N. Giocatori (Multiplayer): " + nGiocatori);
 
-                imp.Show(); //Visualizza l'altra finestra
+                if (modalita == "Singleplayer")
+                {
+                    //Modalità Singleplayer
+                    ImpiccatoSingleplayer impSingle = new ImpiccatoSingleplayer(parolaGenerata, aiuto); //Passa la parola generata e l'aiuto alla schermata "impSingle"
+                    impSingle.Show(); //Visualizza l'altra finestra
+                }
+                else
+                {
+                    //Modalità multiplayer (CPU o locale è uguale)
+                    if (modalita == "Multiplayer (Bot)")
+                        nGiocatori = "2";
+
+
+                    Multiplyer.Impiccaato_Multiplayer impMulti = new Multiplyer.Impiccaato_Multiplayer(parolaGenerata, aiuto, difficolta, nGiocatori, modalita);
+                    impMulti.Show(); //Visualizza finestra per il multiplayer
+                }
 
                 this.Close(); //Chiudi questa finestra
             }

@@ -1,0 +1,29 @@
+﻿<Window x:Class="impiccato_v1.Multiplyer.Impiccaato_Multiplayer"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:impiccato_v1.Multiplyer"
+        mc:Ignorable="d"
+        Title="Impiccato - Multiplayer" Height="256.768" Width="733.449" ResizeMode="NoResize" >
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="/impiccato v1;component/Immagini/2.jpg" Stretch="UniformToFill"/>
+        </Grid.Background>
+        <Label Content="Parola da indovinare:" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="275" Foreground="White" FontFamily="Rockwell Condensed"/>
+        <Label x:Name="lblParola" Content="" HorizontalAlignment="Left" Margin="10,36,0,0" VerticalAlignment="Top" Width="386" Background="{x:Null}" Foreground="White"/>
+        <Label x:Name="lblTurno" Content="Giocatore 0" HorizontalAlignment="Left" Margin="86,67,0,0" VerticalAlignment="Top" Width="251" Background="{x:Null}" Foreground="White" FontFamily="Rockwell Condensed"/>
+        <Label Content="E' il turno di:" HorizontalAlignment="Left" Margin="10,67,0,0" VerticalAlignment="Top" Width="275" Foreground="White" FontFamily="Rockwell Condensed" RenderTransformOrigin="0.487,1.35" Height="24"/>
+        <TextBox x:Name="txtInp" Height="61" Margin="6,0,483,10" TextWrapping="Wrap" Text="" VerticalAlignment="Bottom" TextChanged="TextBox_TextChanged" BorderBrush="{x:Null}" SelectionBrush="#FF008EFF" Foreground="Black" FontFamily="Rockwell Condensed">
+            <TextBox.Background>
+                <SolidColorBrush Color="White" Opacity="0.5"/>
+            </TextBox.Background>
+        </TextBox>
+        <Button x:Name="btnProva" Content="Prova" HorizontalAlignment="Right" Margin="0,0,372,10" Width="106" IsEnabled="False" Height="61" VerticalAlignment="Bottom" Click="btnProva_Click" Background="White" FontFamily="Rockwell Condensed" Foreground="Black" BorderBrush="#FFC7C7C7"/>
+        <Label Content="Parola/Lettera da provare:" Margin="6,0,449,72" Height="26" VerticalAlignment="Bottom" Foreground="White" FontFamily="Rockwell Condensed"/>
+        <Button x:Name="btnAiuto" Content="Aiuto" HorizontalAlignment="Left" Margin="363,0,0,10" Width="75" IsEnabled="False" Cursor="Help" Height="61" VerticalAlignment="Bottom" Click="btnAiuto_Click" Background="White" FontFamily="Rockwell Condensed" Foreground="Black" BorderBrush="#FFB2B2B2"/>
+        <Image x:Name="imgImpiccato" Margin="452,10,10,10"/>
+        <Button x:Name="btnNomi" Content="Nomi Giocatori" Margin="0,0,372,76" Click="BtnNomi_Click" Background="White" FontFamily="Rockwell Condensed" RenderTransformOrigin="0.58,-0.912" Height="22" VerticalAlignment="Bottom" HorizontalAlignment="Right" Width="106" BorderBrush="#FFCDCDCD"/>
+
+    </Grid>
+</Window>

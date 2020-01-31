@@ -40,6 +40,13 @@
     <ApplicationIcon>Icona.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="AxInterop.WMPLib, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\WMPLib.1.0.0\lib\AxInterop.WMPLib.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.WMPLib, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\WMPLib.1.0.0\lib\Interop.WMPLib.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
@@ -71,7 +78,11 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Impiccato.xaml">
+    <Page Include="Impiccato Singleplayer.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Impostazioni.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -83,15 +94,46 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Impiccato.xaml.cs">
-      <DependentUpon>Impiccato.xaml</DependentUpon>
+    <Compile Include="Impiccato Singleplayer.xaml.cs">
+      <DependentUpon>Impiccato Singleplayer.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Impostazioni.xaml.cs">
+      <DependentUpon>Impostazioni.xaml</DependentUpon>
     </Compile>
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="meme.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Multiplyer\Classifica.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Multiplyer\Impiccaato Multiplayer.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Multiplyer\NomiGiocatori.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="meme.xaml.cs">
+      <DependentUpon>meme.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Multiplyer\Classifica.xaml.cs">
+      <DependentUpon>Classifica.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Multiplyer\Impiccaato Multiplayer.xaml.cs">
+      <DependentUpon>Impiccaato Multiplayer.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Multiplyer\NomiGiocatori.xaml.cs">
+      <DependentUpon>NomiGiocatori.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -118,7 +160,9 @@
     <None Include="bin\Debug\lib\Italiano Difficile.wdb" />
     <None Include="bin\Debug\lib\Output.cfg" />
     <None Include="bin\Debug\lib\Request.cfg" />
-    <None Include="bin\Debug\lib\Spagnolo.wdb" />
+    <None Include="bin\Debug\lib\Spagnolo Difficile.wdb" />
+    <None Include="bin\Debug\lib\Spagnolo Facile.wdb" />
+    <None Include="bin\Debug\lib\Spagnolo Medio.wdb" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -127,9 +171,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Icona.ico" />
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Immagini\Impicato err0.png" />
@@ -141,24 +182,26 @@
     <Resource Include="Immagini\Impicato err6.png" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="bin\Debug\de\Xceed.Wpf.AvalonDock.resources.dll" />
-    <Content Include="bin\Debug\es\Xceed.Wpf.AvalonDock.resources.dll" />
-    <Content Include="bin\Debug\fr\Xceed.Wpf.AvalonDock.resources.dll" />
-    <Content Include="bin\Debug\hu\Xceed.Wpf.AvalonDock.resources.dll" />
     <Content Include="bin\Debug\impiccato v1.exe" />
     <Content Include="bin\Debug\impiccato v1.pdb" />
-    <Content Include="bin\Debug\it\Xceed.Wpf.AvalonDock.resources.dll" />
     <Content Include="bin\Debug\lib\wdb.exe" />
-    <Content Include="bin\Debug\pt-BR\Xceed.Wpf.AvalonDock.resources.dll" />
-    <Content Include="bin\Debug\ro\Xceed.Wpf.AvalonDock.resources.dll" />
-    <Content Include="bin\Debug\ru\Xceed.Wpf.AvalonDock.resources.dll" />
-    <Content Include="bin\Debug\sv\Xceed.Wpf.AvalonDock.resources.dll" />
+    <Content Include="bin\Debug\Sounds\Err.wav" />
+    <Content Include="bin\Debug\Sounds\Indovinata.wav" />
+    <Content Include="bin\Debug\Sounds\Lose 1.wav" />
+    <Content Include="bin\Debug\Sounds\Lose 2.wav" />
+    <Content Include="bin\Debug\Sounds\Win.wav" />
     <Content Include="bin\Debug\Xceed.Wpf.AvalonDock.dll" />
     <Content Include="bin\Debug\Xceed.Wpf.AvalonDock.Themes.Aero.dll" />
     <Content Include="bin\Debug\Xceed.Wpf.AvalonDock.Themes.Metro.dll" />
     <Content Include="bin\Debug\Xceed.Wpf.AvalonDock.Themes.VS2010.dll" />
     <Content Include="bin\Debug\Xceed.Wpf.Toolkit.dll" />
-    <Content Include="bin\Debug\zh-Hans\Xceed.Wpf.AvalonDock.resources.dll" />
+    <Resource Include="Immagini\Podio.jpg" />
+    <Resource Include="Immagini\2.jpg" />
+    <Resource Include="Immagini\main.jpg" />
+    <Resource Include="Icona.ico" />
+    <Resource Include="Immagini\Icona.ico" />
+    <Resource Include="Immagini\First time.jpg" />
+    <Resource Include="Immagini\Aiuto.jpg" />
     <Resource Include="Immagini\Loading.gif" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

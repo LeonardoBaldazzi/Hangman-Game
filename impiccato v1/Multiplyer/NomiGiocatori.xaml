@@ -1,0 +1,17 @@
+﻿<Window x:Class="impiccato_v1.Multiplyer.NomiGiocatori"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:impiccato_v1.Multiplyer"
+        mc:Ignorable="d"
+        Title="Impiccato - Nomigiocatori" Height="450" Width="800" ResizeMode="NoResize">
+    <Window.Background>
+        <ImageBrush ImageSource="/impiccato v1;component/Immagini/main.jpg"/>
+    </Window.Background>
+    <Grid>
+        <TextBox x:Name="txtNomiGioc" Margin="10,0,10,63" TextWrapping="Wrap" Text="" Height="346" VerticalAlignment="Bottom" IsEnabled="False" FontFamily="Rockwell Condensed"/>
+        <Button x:Name="btnchiudi" Content="Chiudi" HorizontalAlignment="Left" Margin="10,364,0,7" Width="772" Click="Btnchiudi_Click" FontFamily="Rockwell Condensed" FontSize="22"/>
+
+    </Grid>
+</Window>

@@ -7,46 +7,65 @@
         xmlns:syncfusion="http://schemas.syncfusion.com/wpf" x:Class="impiccato_v1.MainWindow"
         xmlns:xctk="http://schemas.xceed.com/wpf/xaml/toolkit"
         mc:Ignorable="d"
-        Title="Impiccato - Impostazioni" Height="349.501" Width="499.846" ResizeMode="NoResize" Foreground="Black" Background="#FF38B9B4">
+        Title="Impiccato - Impostazioni di Gioco" Height="337.121" Width="499.846" ResizeMode="NoResize" Foreground="Black" Background="#FF38B9B4">
     <Grid>
         <Grid.Background>
-            <ImageBrush/>
+            <ImageBrush ImageSource="Immagini/2.jpg"/>
         </Grid.Background>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="189*"/>
-            <ColumnDefinition Width="14*"/>
-            <ColumnDefinition Width="149*"/>
-        </Grid.ColumnDefinitions>
-        <Label Content="Seleziona modalità di gioco:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,10,0,0" Width="280" Grid.ColumnSpan="3"/>
-        <ComboBox x:Name="cbModalita" HorizontalAlignment="Left" Margin="10,41,0,0" VerticalAlignment="Top" Width="186" SelectionChanged="CbModalita_SelectionChanged" Grid.ColumnSpan="2">
+
+        <Label Content="Seleziona modalità di gioco:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,10,0,0" Width="280" Grid.ColumnSpan="3" Height="26" Foreground="White"/>
+        <ComboBox x:Name="cbModalita" HorizontalAlignment="Left" Margin="10,41,0,0" VerticalAlignment="Top" Width="186" SelectionChanged="CbModalita_SelectionChanged" Height="22">
+            <ComboBox.Background>
+                <LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">
+                    <GradientStop Color="#FFF0F0F0" Offset="1"/>
+                    <GradientStop Color="#FFE5E5E5"/>
+                </LinearGradientBrush>
+            </ComboBox.Background>
             <ComboBoxItem Content="Singleplayer"/>
-            <ComboBoxItem Content="Multiplayer (CPU)"/>
+            <ComboBoxItem Content="Multiplayer (Bot)"/>
             <ComboBoxItem Content="Multiplayer (Locale)"/>
         </ComboBox>
-        <StackPanel x:Name="pn1" HorizontalAlignment="Left" Height="219" Margin="10,80,-43,0" VerticalAlignment="Top" Width="385" Visibility="Visible" Grid.ColumnSpan="3">
-            <Label Content="Seleziona la difficoltà:" HorizontalAlignment="Left" VerticalAlignment="Top" Width="280"/>
+        <StackPanel x:Name="pn1" HorizontalAlignment="Left" Height="219" Margin="10,80,0,0" VerticalAlignment="Top" Width="385" Visibility="Visible" Grid.ColumnSpan="3">
+            <Label Content="Seleziona la difficoltà:" HorizontalAlignment="Left" VerticalAlignment="Top" Width="280" Foreground="White"/>
             <ComboBox x:Name="cbDifficolta" HorizontalAlignment="Left" VerticalAlignment="Top" Width="186" SelectionChanged="CbDifficolta_SelectionChanged">
+                <ComboBox.Background>
+                    <LinearGradientBrush EndPoint="0,1" Opacity="0.5" StartPoint="0,0">
+                        <GradientStop Color="#FFF0F0F0" Offset="0"/>
+                        <GradientStop Color="#FFE5E5E5" Offset="1"/>
+                    </LinearGradientBrush>
+                </ComboBox.Background>
                 <ComboBoxItem Content="Facile"/>
                 <ComboBoxItem Content="Medio"/>
                 <ComboBoxItem Content="Difficile"/>
             </ComboBox>
             <StackPanel x:Name="pnLingua" HorizontalAlignment="Left" Height="169" VerticalAlignment="Top" Width="375" Visibility="Visible">
-                <Label Content="Seleziona la lingua:" HorizontalAlignment="Left" VerticalAlignment="Top" Width="280"/>
+                <Label Content="Seleziona la lingua:" HorizontalAlignment="Left" VerticalAlignment="Top" Width="280" Foreground="White"/>
                 <ComboBox x:Name="cbLingua" HorizontalAlignment="Left" VerticalAlignment="Top" Width="186" SelectionChanged="CbLingua_SelectionChanged">
+                    <ComboBox.Background>
+                        <LinearGradientBrush EndPoint="0,1" Opacity="0.5" StartPoint="0,0">
+                            <GradientStop Color="#FFF0F0F0" Offset="0"/>
+                            <GradientStop Color="#FFE5E5E5" Offset="1"/>
+                        </LinearGradientBrush>
+                    </ComboBox.Background>
                     <ComboBoxItem Content="Italiano"/>
                     <ComboBoxItem Content="Inglese"/>
                     <ComboBoxItem Content="Spagnolo"/>
                 </ComboBox>
             </StackPanel>
         </StackPanel>
-        <Button x:Name="btnGioca" Content="Gioca" HorizontalAlignment="Left" VerticalAlignment="Top" Width="469" Height="80" Click="Button_Click" IsEnabled="False" Margin="10,219,0,0" Grid.ColumnSpan="3" Foreground="Black">
+        <Button x:Name="btnGioca" Content="Gioca" Click="Button_Click" IsEnabled="False" Margin="10,219,204,9" Foreground="Black" FontSize="14">
             <Button.Background>
                 <SolidColorBrush Color="White"/>
             </Button.Background>
         </Button>
+        <Button x:Name="btnImpostazione" Content="Impostazioni" Margin="295,219,10,9" Click="btnImpostazione_Click"/>
         <StackPanel x:Name="pnNGiocatori" HorizontalAlignment="Left" Height="175" Margin="246,10,0,0" VerticalAlignment="Top" Width="238" Grid.ColumnSpan="3">
-            <Label Content="Numero Giocatori:" HorizontalAlignment="Left" VerticalAlignment="Top" Width="110"/>
-            <TextBox x:Name="txtNGiocatori" Height="23" TextWrapping="Wrap" Text="0"/>
+            <Label Content="Numero Giocatori:" HorizontalAlignment="Left" VerticalAlignment="Top" Width="110" Foreground="White"/>
+            <TextBox x:Name="txtNGiocatori" Height="23" TextWrapping="Wrap" Text="">
+                <TextBox.Background>
+                    <SolidColorBrush Color="White" Opacity="0.5"/>
+                </TextBox.Background>
+            </TextBox>
         </StackPanel>
     </Grid>
 </Window>

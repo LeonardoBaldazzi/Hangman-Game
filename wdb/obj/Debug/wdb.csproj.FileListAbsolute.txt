@@ -33,3 +33,8 @@ C:\Users\foxch\Desktop\Hangman-Game-master\wdb\bin\Debug\wdb.pdb
 C:\Users\foxch\Desktop\Hangman-Game-master\wdb\obj\Debug\wdb.csprojAssemblyReference.cache
 C:\Users\foxch\Desktop\Hangman-Game-master\wdb\obj\Debug\wdb.exe
 C:\Users\foxch\Desktop\Hangman-Game-master\wdb\obj\Debug\wdb.pdb
+C:\Users\foxch\OneDrive\Hangman-Game-master\wdb\bin\Debug\wdb.exe
+C:\Users\foxch\OneDrive\Hangman-Game-master\wdb\bin\Debug\wdb.pdb
+C:\Users\foxch\OneDrive\Hangman-Game-master\wdb\obj\Debug\wdb.csprojAssemblyReference.cache
+C:\Users\foxch\OneDrive\Hangman-Game-master\wdb\obj\Debug\wdb.exe
+C:\Users\foxch\OneDrive\Hangman-Game-master\wdb\obj\Debug\wdb.pdb

@@ -31,6 +31,9 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Immagine.ico</ApplicationIcon>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -45,6 +48,7 @@
     <Compile Include="Reader\IO.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Immagine.ico" />
     <Content Include="src\Inglese.wdb" />
     <Content Include="src\Italiano.wdb" />
     <Content Include="src\Request.cfg" />
